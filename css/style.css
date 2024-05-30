@@ -1,0 +1,55 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: #111;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.cycle-slideshow{
+    width: 100%;
+    max-width: 760px;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    border: 5px solid white;
+}
+.cycle-prev, .cycle-next{
+    font-size: 350%;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 45%;
+    z-index: 999;
+    cursor: pointer;
+}
+.cycle-prev{left: 1%;}
+.cycle-next{right: 1%;}
+.cycle-pager{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 998;
+    bottom: 1%;
+}
+.cycle-pager span{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cycle-pager .cycle-pager-active{background-color: white;}

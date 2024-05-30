@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- START: Image Slider -->
+    <div class="cycle-slideshow"
+         data-cycle-speed="100"
+         dat-cycle-manual-speed="2000"
+         data-cycle-fx='scrollHorz'
+         data-cycle-timeout="600"
+    >
+        <!-- START: Controllers -->
+            <span class="cycle-prev">&#60</span>
+            <span class="cycle-next">&#62</span>
+            <span class="cycle-pager"></span>
+        <!-- END: Controllers -->
+        <img src="./img/image-01.jpg" alt="fantasy purple">
+        <img src="./img/image-02.jpg" alt="purple fllower">
+        <img src="./img/image-03.jpg" alt="purple insect">
+        <img src="./img/image-04.jpg" alt="fllower">
+        <img src="./img/image-05.jpg" alt="Hero">
+    </div>
+    <button data-cycle-cmd="pause">Pause</button>
+    <button data-cycle-cmd="resume">Resume</button>
+    <!-- END: Image Slider -->
+    <script src="./js/compressed jquery 3.7.1.js"></script>
+    <script src="./js/jquery.cycle2.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
